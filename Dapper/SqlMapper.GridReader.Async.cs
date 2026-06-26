@@ -282,8 +282,7 @@ namespace Dapper
 #pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
             {
                 if (reader is not null)
-                {
-                    if (!reader.IsClosed) Command?.Cancel();
+                {                    
 #if NET5_0_OR_GREATER
                     await reader.DisposeAsync();
 #else
