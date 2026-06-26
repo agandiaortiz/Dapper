@@ -1167,11 +1167,6 @@ namespace Dapper
             {
                 if (reader is not null)
                 {
-                    if (!reader.IsClosed)
-                    {
-                        try { cmd?.Cancel(); }
-                        catch { /* don't spoil any existing exception */ }
-                    }
                     reader.Dispose();
                 }
 
@@ -1248,11 +1243,6 @@ namespace Dapper
             {
                 if (reader is not null)
                 {
-                    if (!reader.IsClosed)
-                    {
-                        try { cmd?.Cancel(); }
-                        catch { /* don't spoil any existing exception */ }
-                    }
                     reader.Dispose();
                 }
                 if (wasClosed) cnn.Close();
@@ -1340,11 +1330,6 @@ namespace Dapper
             {
                 if (reader is not null)
                 {
-                    if (!reader.IsClosed)
-                    {
-                        try { cmd?.Cancel(); }
-                        catch { /* don't spoil any existing exception */ }
-                    }
                     reader.Dispose();
                 }
                 if (wasClosed) cnn.Close();

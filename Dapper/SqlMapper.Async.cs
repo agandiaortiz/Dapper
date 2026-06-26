@@ -1053,13 +1053,6 @@ namespace Dapper
             {
                 if (reader is not null)
                 {
-                    if (!reader.IsClosed)
-                    {
-                        try { cmd?.Cancel(); }
-                        catch
-                        { /* don't spoil the existing exception */
-                        }
-                    }
                     reader.Dispose();
                 }
                 cmd?.Dispose();
@@ -1332,12 +1325,7 @@ namespace Dapper
                 finally
                 {
                     if (reader is not null)
-                    {
-                        if (!reader.IsClosed)
-                        {
-                            try { cmd?.Cancel(); }
-                            catch { /* don't spoil any existing exception */ }
-                        }
+                    {                        
 #if NET5_0_OR_GREATER
                         await reader.DisposeAsync();
 #else
