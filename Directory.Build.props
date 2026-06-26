@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <Copyright>2019 Stack Exchange, Inc.</Copyright>
+    <Copyright>Copyright © Vodafone Enabler España 2026</Copyright>
 
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -8,11 +8,11 @@
 
     <PackageId>$(AssemblyName)</PackageId>
     <PackageReleaseNotes>https://dapperlib.github.io/Dapper/</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/DapperLib/Dapper</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com.mcas.ms/agandiaortiz/Dapper</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageIcon>Dapper.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/DapperLib/Dapper</RepositoryUrl>
+    <RepositoryUrl>https://github.com.mcas.ms/agandiaortiz/Dapper</RepositoryUrl>
     <Deterministic>false</Deterministic>
     <NoWarn>$(NOWARN);IDE0056;IDE0057;IDE0079;DX1001</NoWarn>
     <DebugSymbols>true</DebugSymbols>
