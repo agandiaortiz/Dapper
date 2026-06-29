@@ -15,7 +15,7 @@
     <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <PackageProjectUrl>https://github.com.mcas.ms/agandiaortiz/Dapper</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/agandiaortiz/Dapper</PackageProjectUrl>
     <RepositoryUrl>https://github.com.mcas.ms/agandiaortiz/Dapper</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
