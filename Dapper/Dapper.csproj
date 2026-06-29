@@ -2,12 +2,21 @@
   <PropertyGroup>
     <AssemblyName>Dapper</AssemblyName>
     <Title>Dapper</Title>
+    <PackageId>Dapper</PackageId>                      
+    <Version>2.1.79-internal.1</Version> 
     <PackageTags>orm;sql;micro-orm</PackageTags>
     <Description>A high performance Micro-ORM supporting SQL Server, MySQL, Sqlite, SqlCE, Firebird etc. Major Sponsor: Dapper Plus from ZZZ Projects.</Description>
-    <Authors>Sam Saffron;Marc Gravell;Nick Craver</Authors>
+    <Authors>Vodafone Enabler España</Authors>
+	<Company>Vodafone Enabler España</Company>
+	<Copyright>Copyright © Vodafone Enabler España 2024</Copyright>
+	<FileVersion>2.1.79.1</FileVersion>         <!-- maps to "File version" -->
+	<AssemblyVersion>2.1.79.1</AssemblyVersion> <!-- maps to "Product version" base -->
+	<InformationalVersion>2.1.79-internal.1</InformationalVersion>
     <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageProjectUrl>https://github.com/agandiaortiz/Dapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/agandiaortiz/Dapper</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <!-- common base API goes here -->
@@ -17,19 +26,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
-
     <PackageReference Include="Microsoft.CodeAnalysis.PublicApiAnalyzers">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461'">
-    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" />
-    <PackageReference Include="System.Threading.Tasks.Extensions" />
-  </ItemGroup>
-  
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
+   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" />
     <PackageReference Include="System.Reflection.Emit.Lightweight" />
     <PackageReference Include="System.Threading.Tasks.Extensions" />

@@ -1,12 +1,14 @@
 {
-  "version": "2.1",
-  "assemblyVersion": "2.0.0.0",
+  "version": "2.1.79-internal",
+  "assemblyVersion": "2.1.79.1",
+  "fileVersion": "2.1.79.1",
+  "buildNumberOffset": 0,
   "publicReleaseRefSpec": [
     "^refs/heads/main$",
     "^refs/tags/v\\d+\\.\\d+"
   ],
   "nugetPackageVersion": {
-    "semVer": 2
+    "semVer": 1
   },
   "cloudBuild": {
     "buildNumber": {
