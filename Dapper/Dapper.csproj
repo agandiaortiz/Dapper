@@ -16,7 +16,7 @@
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PackageProjectUrl>https://github.com/agandiaortiz/Dapper</PackageProjectUrl>
-    <RepositoryUrl>https://github.com.mcas.ms/agandiaortiz/Dapper</RepositoryUrl>
+    <RepositoryUrl>https://github.com/agandiaortiz/Dapper</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <!-- common base API goes here -->
